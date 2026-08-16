@@ -132,6 +132,7 @@ app.get('/api/youtube/stats', async (req: Request, res: Response) => {
     if (!response.ok) {
       const errText = await response.text();
       console.warn('YouTube API stats error status:', response.status);
+      console.warn('YouTube API error body:', errText);
       if (statsCache) {
         return res.json({ ...statsCache.data, cached: true, warning: 'Stale cache served due to API response' });
       }
