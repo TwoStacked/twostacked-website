@@ -1,0 +1,6 @@
+{
+  "name": "TwoStacked",
+  "description": "Official TwoStacked Roblox BedWars channel hub with real-time YouTube statistics, latest uploads, challenge board, owner profiles, and community application portals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
