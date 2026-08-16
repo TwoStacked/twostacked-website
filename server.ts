@@ -139,7 +139,7 @@ app.get('/api/youtube/stats', async (req: Request, res: Response) => {
       return res.json({
         ...fallbackStats,
         isLiveApi: false,
-        warning: `YouTube API returned status ${response.status}`,
+        warning: `YouTube API returned status ${response.status}: ${errText}`,
       });
     }
 
